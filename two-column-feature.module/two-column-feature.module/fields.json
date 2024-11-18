@@ -60,6 +60,23 @@
    "name": "color_scheme"
   },
   {
+   "type": "choice",
+   "id": "c4271900-36ff-3277-6348-6e4c5b1d5087",
+   "display": "select",
+   "choices": [
+    [
+     "two columns",
+     "col"
+    ],
+    [
+     "three columns",
+     "three-col"
+    ]
+   ],
+   "label": "column_type",
+   "name": "column_type"
+  },
+  {
     "name": "layout",
     "type": "choice",
     "label": "Layout - documentation version",

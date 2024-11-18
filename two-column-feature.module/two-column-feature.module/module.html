@@ -3,12 +3,12 @@
 <div class="two-col-feature {{ module.choice_field }}  {{ module.color_scheme }}">
 
   
-  <div class="col text"> 
+  <div class="col {{ module.column_type}} text"> 
       {% inline_rich_text field="feature_text" value="{{ module.feature_text }}" %}
   </div>
   
   
-  <div class="col image"> 
+  <div class="col {{ module.column_type}} image"> 
     
     {% if module.feature_image.src %}
     {% set sizeAttrs = 'width="{{ module.feature_image.width|escape_attr }}" height="{{ module.feature_image.height|escape_attr }}"' %}
