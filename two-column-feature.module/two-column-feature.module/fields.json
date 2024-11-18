@@ -1,11 +1,76 @@
 [
   {
-    "default": "<h1>Hello, world!</h1>",
-    "label": "Rich text field",
-    "locked": false,
-    "name": "text",
+   "type": "richtext",
+   "id": "90bc1363-05fe-98f3-97af-b7dd186bd0bf",
+   "label": "feature_text",
+   "name": "feature_text",
+   "default": "Cats are so amazing!"
+  },
+  {
+   "type": "image",
+   "id": "5de151c0-a8bc-61bb-d185-3ec4e6f7cbf4",
+   "default": {
+    "size_type": "auto",
+    "src": "https://48097490.fs1.hubspotusercontent-na1.net/hubfs/48097490/boyzinthehood-dbz.jpeg",
+    "alt": "boyzinthehood-dbz",
+    "loading": "lazy",
+    "width": 225,
+    "height": 225,
+    "max_width": 225,
+    "max_height": 225
+   },
+   "resizable": true,
+   "responsive": true,
+   "show_loading": false,
+   "label": "Image",
+   "name": "feature_image"
+  },
+  {
+   "type": "choice",
+   "id": "59224c6f-6236-e6bb-6cf5-286f558668cf",
+   "display": "select",
+   "choices": [
+    [
+     "img-right",
+     "Image Right"
+    ],
+    [
+     "img-left",
+     "Image Left"
+    ]
+   ],
+   "label": "Choice",
+   "name": "choice_field"
+  },
+  {
+   "type": "choice",
+   "id": "c4271900-36ff-3277-6348-6e4c5b1d5087",
+   "display": "select",
+   "choices": [
+    [
+     "light",
+     "light"
+    ],
+    [
+     "dark",
+     "dark"
+    ]
+   ],
+   "label": "color_scheme",
+   "name": "color_scheme"
+  },
+  {
+    "name": "layout",
+    "type": "choice",
+    "label": "Layout - documentation version",
     "required": false,
-    "type": "richtext",
-    "validation_regex": ""
+    "locked": false,
+    "display": "buttons",
+    "preset": "layout",
+    "choices": [
+      ["cards_value", "cards"],
+      ["tiles_value", "tiles"],
+      ["minimal_value", "minimal"]
+    ]
   }
 ]
